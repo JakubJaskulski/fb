@@ -8,7 +8,7 @@
     --font-color: #dcdbd7;
     --dark-font-color: #0f1010;
     --light-hover-color: #343633;
-
+    --font-size: 16px;
 }
 
 
@@ -20,6 +20,7 @@ body, html {
     overflow: hidden;
     color: var(--font-color);
     font-family: Helvetica, Arial, sans-serif;
+    font-size: var(--font-size);
 }
 
 #root {
@@ -106,6 +107,10 @@ body, html {
     margin: 0 2px;
 }
 
+.roundIconButton:hover {
+    background: var(--light-hover-color);
+}
+
 .leftSide {
     grid-area: leftSide;
     background: var(--background-color);
@@ -184,4 +189,21 @@ body, html {
 
 .contact:hover {
     background: var(--light-hover-color);
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+
+    font-size: 12px;
+
+}
+
+.footer button {
+    background: var(--background-color);
+    border: unset;
+    color: var(--font-color);
 }

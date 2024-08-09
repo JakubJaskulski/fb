@@ -46,7 +46,6 @@
     overflow: auto;
     top: 54px;
     left: 10px;
-    /*border-radius: 10px;*/
     background: var(--dark-gray-element);
     border: 1px groove var(--border-color);
 }
@@ -73,9 +72,7 @@
     border-radius: 10px;
     align-content: center;
     padding: 0 20px 0 20px;
-
     text-align: center;
-
     display: flex;
     flex-direction: row;
 }
@@ -118,8 +115,66 @@
     align-content: center;
     text-align: center;
     margin: 0 2px;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-weight: bold;
 }
 
 .roundIconButton:hover {
     background: var(--light-hover-color);
+}
+
+.roundIconMenuPanel {
+    position: absolute;
+    width: 340px;
+    max-height: 380px;
+    height: auto;
+    min-height: 60px;
+    z-index: 999;
+    overflow: auto;
+    top: 54px;
+    right: 10px;
+    background: var(--dark-gray-element);
+    border: 1px groove var(--border-color);
+    /*overflow: hidden;*/
+}
+
+.manuPanel {
+    height: auto;
+}
+
+.notificationsPanel {
+}
+
+.accountPanel {
+}
+
+.menuButton {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--post-color);
+    color: var(--font-color);
+}
+
+.roundImage {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.content {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 220px;
+    line-height: 5px;
+}
+
+.passedTime {
+    padding: 5px;
+    text-align: right;
 }

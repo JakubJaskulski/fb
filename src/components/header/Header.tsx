@@ -1,6 +1,7 @@
 import './style.css';
 import {Search} from "./HeaderSearch";
 import {FeedTypeSelection} from "./HeaderFeedTypeSelection";
+import {HeaderRoundIconMenu} from "./HeaderRoundIconMenu";
 
 
 export const Header = () => {
@@ -8,18 +9,7 @@ export const Header = () => {
         <div className="header">
             <Search/>
             <FeedTypeSelection/>
-            <RoundIconMenu/>
-        </div>
-    )
-}
-
-
-const RoundIconMenu = () => {
-    return (
-        <div className='headerRoundIconMenu'>
-            <div className='roundIconButton'>M</div>
-            <div className='roundIconButton'>N</div>
-            <div className='roundIconButton'>A</div>
+            <HeaderRoundIconMenu/>
         </div>
     )
 }

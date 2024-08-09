@@ -1,22 +1,19 @@
 import {useState} from "react";
 
 export const Search = () => {
-    const [isPopupVisible, setIsPopupVisible] = useState(false);
+    const [isPanelVisible, setIsPanelVisible] = useState(false);
 
     const handleFocus = () => {
-        setIsPopupVisible(true);
+        setIsPanelVisible(true);
     };
 
     const handleBlur = () => {
-        setIsPopupVisible(false)
+        setIsPanelVisible(false)
     };
     return (
         <div className='headerSearch'>
-            <input type="text" placeholder='Search' onFocus={handleFocus}
-                   onBlur={handleBlur}
-
-            />
-            {isPopupVisible && (
+            <input type="text" placeholder='Search' onFocus={handleFocus} onBlur={handleBlur}/>
+            {isPanelVisible && (
                 <PreviousSearchesPanel/>
             )}
         </div>

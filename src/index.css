@@ -5,9 +5,10 @@
     --dark-gray-element: #0e0e10;
     --body-color: #141417;
     --post-color: #424244;
-    --font-color: #dcdbd7;
     --dark-font-color: #0f1010;
-    --light-hover-color: #343633;
+    --light-hover-color: #3d3d3d;
+    --font-color: #dcdbd7;
+    --font-darker-color: #b7b6b0;
     --font-size: 16px;
 }
 
@@ -103,7 +104,7 @@ body, html {
 .contactsHeader {
     font-size: 30px;
     margin-bottom: 20px;
-
+    color: var(--font-darker-color);
 }
 
 .contact {

@@ -38,16 +38,32 @@
 
 .previousSearchesPanel {
     position: absolute;
-    width: 320px;
+    width: 340px;
     max-height: 380px;
     height: auto;
     min-height: 60px;
     z-index: 999;
     overflow: auto;
-    top: 40px;
-    left: 12px;
-    border-radius: 10px;
+    top: 54px;
+    left: 10px;
+    /*border-radius: 10px;*/
     background: var(--dark-gray-element);
+    border: 1px groove var(--border-color);
+}
+
+.previousSearchesPanelTitle {
+    margin: 5px;
+    font-size: 20px;
+    color: var(--font-darker-color);
+}
+
+.previousSearch {
+    background: var(--gray-panel-color);
+    height: 60px;
+    border-radius: 5px;
+    margin: 5px;
+    align-content: center;
+    padding-left: 10px;
 }
 
 .feedTypeSelection {
@@ -68,10 +84,22 @@
     width: 160px;
     align-content: center;
     border-radius: 5px;
+    background: var(--dark-gray-element);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    border: none;
+}
+
+.feedTypeSelectionButtonSelected {
+    border-bottom: 5px groove #225bec;
+    border-top: 5px solid var(--dark-gray-element);
+    color: #225bec;
+    font-weight: bold
 }
 
 .feedTypeSelectionButton:hover {
     background: var(--light-hover-color);
+    border-top: 5px solid var(--light-hover-color);
 }
 
 .headerRoundIconMenu {

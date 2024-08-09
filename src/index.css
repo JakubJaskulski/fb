@@ -37,79 +37,6 @@ body, html {
     height: 100%;
 }
 
-.header {
-    grid-area: header;
-    height: 33px;
-    background: var(--gray-panel-color);
-    border-bottom: 1px groove var(--border-color);
-    overflow: hidden;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between; /* Distributes space between left, center, and right */
-    align-items: center;
-}
-
-.headerSearch {
-    background: var(--dark-gray-element);
-    height: 45px;
-    width: 200px;
-    border-radius: 20px;
-    align-content: center;
-    padding-left: 20px;
-}
-
-.feedTypeSelection {
-    background: var(--dark-gray-element);
-    height: 45px;
-    width: auto;
-    border-radius: 10px;
-    align-content: center;
-    padding: 0 20px 0 20px;
-
-    text-align: center;
-
-    display: flex;
-    flex-direction: row;
-}
-
-.feedTypeSelectionButton {
-    width: 160px;
-    align-content: center;
-    border-radius: 5px;
-}
-
-.feedTypeSelectionButton:hover {
-    background: var(--light-hover-color);
-}
-
-.headerRoundIconMenu {
-    /*background: var(--dark-gray-element);*/
-    height: 45px;
-    width: 200px;
-    /*border-radius: 10px;*/
-    align-content: center;
-    /*padding: 0 20px 0 20px;*/
-
-    display: flex;
-    flex-direction: row;
-}
-
-.roundIconButton {
-    background: #0e0e10;
-    width: 45px;
-    height: 45px;
-    border-radius: 25px;
-    align-content: center;
-    text-align: center;
-    margin: 0 2px;
-}
-
-.roundIconButton:hover {
-    background: var(--light-hover-color);
-}
 
 .leftSide {
     grid-area: leftSide;
@@ -146,7 +73,6 @@ body, html {
     justify-content: flex-start;
     align-items: flex-start;
     margin: 0 auto;
-    /*height: 100%;*/
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -156,8 +82,8 @@ body, html {
     height: auto;
     margin: 10px;
     padding: 10px;
-    width: calc(100% - 20px); /* Adjusted width to account for margins */
-    max-width: calc(100% - 20px); /* Ensures the post does not exceed the feed's width */
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
     background: var(--post-color);
     box-sizing: border-box;
     overflow-wrap: break-word;

@@ -1,3 +1,5 @@
+import './style.css';
+
 export const Contacts = () => {
     return (<div className="rightSide">
         <div className="contacts">

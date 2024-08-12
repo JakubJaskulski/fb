@@ -1,0 +1,16 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: left;
+
+    font-size: 12px;
+
+}
+
+.footer button {
+    background: var(--background-color);
+    border: unset;
+    color: var(--font-color);
+}

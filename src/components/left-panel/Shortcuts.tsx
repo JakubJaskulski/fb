@@ -1,3 +1,5 @@
+import './style.css';
+
 export const Shortcuts = () => {
     return (<div className="leftSide">
         <div className="shortcut">

@@ -1,0 +1,18 @@
+.leftSide {
+    grid-area: leftSide;
+    background: var(--background-color);
+    width: 360px;
+    overflow: hidden;
+}
+
+.shortcut {
+    background: var(--dark-gray-element);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border-bottom: 1px groove var(--border-color);
+}
+
+.shortcut:hover {
+    background: var(--light-hover-color);
+}

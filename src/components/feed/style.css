@@ -1,0 +1,60 @@
+
+.body {
+    grid-area: body;
+    background: var(--body-color);
+    overflow: scroll;
+    padding: 10px;
+    max-height: 100%;
+}
+
+.feed {
+    padding: 10px;
+    background: var(--gray-panel-color);
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto 10px;
+}
+
+.feed h1 {
+    margin: 10px;
+}
+
+.feed h3 {
+    margin: 10px;
+}
+
+.post {
+    min-height: 120px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    background: var(--post-color);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    color: var(--font-color);
+    font-size: var(--font-size);
+}
+
+.createPost {
+    min-height: 50px;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    background: var(--post-color);
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    border-radius: 10px;
+    color: var(--font-color);
+    font-size: var(--font-size);
+    resize: vertical;
+}

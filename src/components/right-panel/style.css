@@ -1,0 +1,26 @@
+.rightSide {
+    grid-area: rightSide;
+    width: 360px;
+    overflow: hidden
+}
+
+.contacts {
+    padding: 10px;
+}
+
+.contactsHeader {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: var(--font-darker-color);
+}
+
+.contact {
+    height: 50px;
+    align-content: center;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.contact:hover {
+    background: var(--light-hover-color);
+}

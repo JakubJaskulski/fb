@@ -136,17 +136,10 @@
     right: 10px;
     background: var(--dark-gray-element);
     border: 1px groove var(--border-color);
-    /*overflow: hidden;*/
 }
 
-.manuPanel {
-    height: auto;
-}
-
-.notificationsPanel {
-}
-
-.accountPanel {
+.roundIconMenuPanel :hover {
+    background: var(--dark-gray-element);
 }
 
 .menuButton {

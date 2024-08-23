@@ -45,16 +45,13 @@
 
 .createPost {
     min-height: 50px;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
-    width: calc(100% - 20px);
-    max-width: calc(100% - 20px);
-    background: var(--post-color);
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    border-radius: 10px;
-    color: var(--font-color);
-    font-size: var(--font-size);
     resize: vertical;
+}
+
+.addPhotoVideo {
+    min-height: 0;
+    height: 40px;
+    background: var(--dark-gray-element);
+    resize: vertical;
+    margin: 0 auto 10px;
 }

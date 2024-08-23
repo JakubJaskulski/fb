@@ -77,7 +77,7 @@
     flex-direction: row;
 }
 
-.feedTypeSelectionButton {
+.feedSelectionButton {
     width: 160px;
     align-content: center;
     border-radius: 5px;
@@ -87,14 +87,14 @@
     border: none;
 }
 
-.feedTypeSelectionButtonSelected {
+.feedSelectionButtonSelected {
     border-bottom: 5px groove #225bec;
     border-top: 5px solid var(--dark-gray-element);
     color: #225bec;
     font-weight: bold
 }
 
-.feedTypeSelectionButton:hover {
+.feedSelectionButton:hover {
     background: var(--light-hover-color);
     border-top: 5px solid var(--light-hover-color);
 }

@@ -1,18 +1,17 @@
-import {useState} from "react";
+import {useContext} from "react";
 
-enum FeedTypes {type1, type2, type3}
+import {FeedContext, FeedTypes} from "../../store/feed-context";
 
 export const FeedTypeSelection = () => {
 
-
-    const [selectedFeedType, setSelectedFeedType] = useState(FeedTypes.type1)
+    const {selectedFeedCategory, setSelectedFeedCategory} = useContext(FeedContext)
 
     const handleFeedTypeSelection = (feedType: FeedTypes) => {
-        setSelectedFeedType(feedType)
+        setSelectedFeedCategory(feedType)
     }
 
-    const getTypeBasedOnSelection = (feedType: FeedTypes) => {
-        return selectedFeedType === feedType ? 'feedTypeSelectionButton feedTypeSelectionButtonSelected' : 'feedTypeSelectionButton'
+    const getTypeBasedOnSelection = (feedCategory: FeedTypes) => {
+        return selectedFeedCategory === feedCategory ? 'feedSelectionButton feedSelectionButtonSelected' : 'feedSelectionButton'
     }
 
     return (
